@@ -160,6 +160,14 @@ return [
          * Package Service Providers...
          */
 
+        //ratelimiter
+        // \Laravel\RateLimiter\RateLimiterServiceProvider::class,
+        //broadcasting
+        // \Illuminate\Broadcasting\BroadcastServiceProvider::class,
+        //session
+        // \Illuminate\Session\SessionServiceProvider::class,
+
+
         /*
          * Application Service Providers...
          */
@@ -168,6 +176,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+         //fortify
+        App\Providers\FortifyServiceProvider::class,
     ])->toArray(),
 
     /*
