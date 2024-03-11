@@ -13,8 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.dashboard');
+// Route::get('/', function () {
+//     return view('pages.dashboard');
+// });
+
+Route::middleware(['auth'])->group(function(){
+
+    Route::get('/', function () {
+        return view('pages.dashboard');
+    })->name('homes');
+
+    // Route::get('/home', function () {
+    //     return view('pages.dashboard');
+    // })->name('home');
+
+
+
 });
 
 // Route::get('/login', function () {

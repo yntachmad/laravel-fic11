@@ -18,7 +18,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="email"
+                    <input id="email" type="email" value="{{ old('email') }}"
                         class="form-control @error('email') is-invalid
 
                     @enderror" name="email"
